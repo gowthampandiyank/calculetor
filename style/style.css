@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+:root {
+  --clr-dark: #110004;
+  --clr-light: #ffffff;
+  --clr-prime: #d4d3d6;
+  --clr-baby-blue: #d90429;
+  --clr-blue: #9fa0ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: var(--clr-light);
+  color: var(--clr-baby-blues);
+}
+header.header {
+  color: var(--clr-light);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  background-color: var(--clr-blue);
+  width: 100%;
+  padding: 25px;
+  border: 10px solid var(--clr-light);
+  border-radius: 10vh 10vh;
+}
+.container {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--clr-prime);
+  border: 10px solid var(--clr-light);
+  border-radius: 10vh 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculetor {
+  background-color: var(--clr-dark);
+  padding: 20px;
+  border-radius: 24px;
+}
+.calculetor form input {
+  border: 0;
+  outline: 0;
+  width: 70px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: var(--clr-light);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(200, 255, 255, 0.1);
+  color: var(--clr-dark);
+  cursor: pointer;
+  font-size: 30px;
+}
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+form .display input {
+  text-align: center;
+  flex: 1;
+  font-size: 45px;
+}
+form input.equal {
+  width: 154px;
+}
+form input.operator {
+  color: var(--clr-baby-blue);
+}
